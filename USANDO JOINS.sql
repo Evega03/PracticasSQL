@@ -1,0 +1,19 @@
+select* from tabla_de_vendedores;
+select* from facturas;
+
+SELECT * FROM TABLA_DE_VENDEDORES A
+INNER JOIN 
+FACTURAS B
+ON A.MATRICULA = B.MATRICULA;
+
+
+SELECT A.NOMBRE, B.MATRICULA, COUNT(*) FROM tabla_de_vendedores A
+INNER JOIN 
+facturas B
+ON A.MATRICULA = B.MATRICULA
+GROUP BY A.NOMBRE, B.MATRICULA;
+
+SELECT A.NOMBRE, B.MATRICULA, COUNT(*)
+FROM tabla_de_vendedores A, facturas B
+WHERE A.MATRICULA = B.MATRICULA
+GROUP BY A.NOMBRE, B.MATRICULA;items_facturas

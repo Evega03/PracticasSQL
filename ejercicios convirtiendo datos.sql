@@ -1,0 +1,12 @@
+select current_timestamp() AS RESULTADO;
+
+SELECT CONCAT("LA FECHA Y LA HORA DE HOY ES: ", current_timestamp()) AS RESULTADO;
+SELECT CONCAT("LA FECHA Y LA HORA DE HOY ES: ", 
+DATE_FORMAT(current_timestamp(), "%d/%m/%Y / %W")) AS RESULTADO;
+
+SELECT CONVERT (23.45, CHAR) AS RESULTADO;
+
+SELECT substring(CONVERT (23.45, CHAR), 3,1) AS RESULTADO;
+
+
+
